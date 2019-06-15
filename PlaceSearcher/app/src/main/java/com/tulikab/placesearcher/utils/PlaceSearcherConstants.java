@@ -10,4 +10,5 @@ public class PlaceSearcherConstants {
 
     public static String nearArea = "Seattle";
     public static String venueId = "20180401";
+    public static int HTTP_OK = 200;
 }

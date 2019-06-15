@@ -4,11 +4,11 @@ import android.text.TextUtils;
 
 public class PlaceSearcherCommonUtils {
 
-    public String constructUrlForVenueSearch(String near, String query){
+    public static String constructUrlForVenueSearch(String near, String query){
 
         String url = "";
 
-        if(TextUtils.isEmpty(query)){
+        if(!TextUtils.isEmpty(query)){
             url = PlaceSearcherConstants.fourSquareBaseUrl +
                     PlaceSearcherConstants.venues +
                     PlaceSearcherConstants.search + "?"
