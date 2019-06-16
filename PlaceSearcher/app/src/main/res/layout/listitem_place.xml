@@ -11,20 +11,24 @@
         android:id="@+id/placeIcon_ll"
         android:orientation="vertical">
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:id="@+id/placeImg_iv"
+            android:background="@color/colorPrimary"
             android:contentDescription="Icon" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/placeIsFav_iv"
-            app:srcCompat="@android:drawable/btn_star_big_on"
-            android:contentDescription="IsFavoriteIcon" />
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:contentDescription="IsFavoriteIcon"
+            android:src="@drawable/isfavorite_clicked"
+            android:tint="@color/colorPrimary"/>
+
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/place_content_ll"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/placeIcon_ll"
@@ -51,5 +55,4 @@
             android:id="@+id/placeDist_tv"/>
 
     </LinearLayout>
-
 </RelativeLayout>

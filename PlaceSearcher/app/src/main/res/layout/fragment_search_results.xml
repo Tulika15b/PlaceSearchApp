@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:id="@+id/empty_view"
+        tools:ignore="PrivateResource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No Venues match the query"
+        android:textColor="@color/ripple_material_light"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/searchedPlace_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Places"
+        android:textSize="30sp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchedPlace_tv"
+        android:id="@+id/searchedResult_recycler_view"
+        android:scrollbars="vertical"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floating_action_fav_places"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_action_fav"
+        android:clickable="true"/>
+</RelativeLayout>
