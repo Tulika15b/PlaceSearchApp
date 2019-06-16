@@ -7,7 +7,7 @@ import android.util.Log;
 
 public class PlaceSearchResultReceiver extends ResultReceiver {
 
-    private PlaceSearchAPICallback placeSearchAPICallback;
+    private APIResponseCallback placeSearchAPICallback;
     /**
      * Create a new ResultReceive to receive results.  Your
      * {@link #onReceiveResult} method will be called from the thread running
@@ -15,7 +15,7 @@ public class PlaceSearchResultReceiver extends ResultReceiver {
      *
      * @param handler
      */
-    public PlaceSearchResultReceiver(Handler handler, PlaceSearchAPICallback callback) {
+    public PlaceSearchResultReceiver(Handler handler, APIResponseCallback callback) {
         super(handler);
         placeSearchAPICallback = callback;
     }

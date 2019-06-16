@@ -4,7 +4,7 @@ import com.tulikab.placesearcher.data.Venue;
 
 import java.util.List;
 
-public interface PlaceSearchAPICallback {
+public interface APIResponseCallback {
 
     void onSuccess(String result);
 
