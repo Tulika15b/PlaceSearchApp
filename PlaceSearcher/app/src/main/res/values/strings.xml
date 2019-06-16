@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PlaceSearcher</string>
+    <string name="title_activity_full_screen_maps">Map</string>
 </resources>
