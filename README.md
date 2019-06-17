@@ -25,7 +25,7 @@ The App uses a Activity, Fragment Model. It has a MainActivity, which further ad
 6. UI Components :
 
 
-*MainScreen* : It uses a SearchView widget for typing in and searching the query
+*MainScreen* : It uses a SearchView widget for typing in and searching the query. It has an autocomplete feature with a pre-defined array of strings for auto-completion.
 *SearchedResultsFragment* : It makes use of RecyclerView, RecyclerView Adapter(PlaceSearchListAdapter), RecyclerView ItemViewHolder(PlaceSearchItemViewHolder) to show the list of Venues received from the controller after the http request. It also has an option to invoke the FullScreenMapActivity using the FloatingActionButton to list all the venues markers on map
 *FullScreenMapsActivity* : It uses the SupportMapFragment to invoke the Google Map related APIs
 *PlaceDetailsActivity* : It uses a collapsing toolbar layout, and contains the further details of a selected venue. It also hosts a static map view of the venue.
@@ -38,4 +38,8 @@ The App makes use of the Picasso library to fetch the images from the icon url.
 1. The App can be modified to support ViewModels
 2. Currently the (optional requirement)logic to add and retrieve the favorite places is not completed and can be added.
 3. Instead of using Picasso library, we can create a DownloadImageAsyncTask to handle the image fetch.
+4. Network checks can be added, and an appropriate dialog or information can be shown to user for the same.
+5. Progress Dialog can be added to show request in progress.
+6. For Auto-completion search, currently it has hardcoded list of strings to check from, further users searched for queries that are not in the list can be added to this list.
+
 
