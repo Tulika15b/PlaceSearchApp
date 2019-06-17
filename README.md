@@ -23,6 +23,8 @@ The App uses a Activity, Fragment Model. It has a MainActivity, which further ad
 5. Network component : The app makes use of a combination of JobIntentService and RequestReceiver classes of Android. The JobIntentService class i.e APIRequestIntentService is responsible for initiating the Http request and receiving the responses for the same. Since the intentService do not have a provision inherently to send back the result, we make use of ResultReceiver class. It is basically a callback mechanism to send back the response to the suitable handler classes.
 
 6. UI Components :
+
+
 *MainScreen* : It uses a SearchView widget for typing in and searching the query
 *SearchedResultsFragment* : It makes use of RecyclerView, RecyclerView Adapter(PlaceSearchListAdapter), RecyclerView ItemViewHolder(PlaceSearchItemViewHolder) to show the list of Venues received from the controller after the http request. It also has an option to invoke the FullScreenMapActivity using the FloatingActionButton to list all the venues markers on map
 *FullScreenMapsActivity* : It uses the SupportMapFragment to invoke the Google Map related APIs
