@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">PlaceSearcher</string>
     <string name="title_activity_full_screen_maps">Map</string>
+    <string name="searchScreenText">Search for Places Around Seattle</string>
+    <string name="searchView_hint">Enter Search Query</string>
+    <string name="no_content">No Available Content</string>
+    <string name="places"> Places</string>
+
 </resources>
