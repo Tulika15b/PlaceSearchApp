@@ -45,6 +45,7 @@ public class PlaceSearchItemViewHolder extends RecyclerView.ViewHolder implement
         switch (v.getId()){
             case R.id.placeIsFav_iv :
                 isFavorite.setImageResource(R.drawable.ic_action_fav);
+                //TODO :: Add Venue to favorites
                 return;
         }
 
