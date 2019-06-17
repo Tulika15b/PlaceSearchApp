@@ -22,3 +22,18 @@ The App uses a Activity, Fragment Model. It has a MainActivity, which further ad
 
 5. Network component : The app makes use of a combination of JobIntentService and RequestReceiver classes of Android. The JobIntentService class i.e APIRequestIntentService is responsible for initiating the Http request and receiving the responses for the same. Since the intentService do not have a provision inherently to send back the result, we make use of ResultReceiver class. It is basically a callback mechanism to send back the response to the suitable handler classes.
 
+6. UI Components :
+*MainScreen* : It uses a SearchView widget for typing in and searching the query
+*SearchedResultsFragment* : It makes use of RecyclerView, RecyclerView Adapter(PlaceSearchListAdapter), RecyclerView ItemViewHolder(PlaceSearchItemViewHolder) to show the list of Venues received from the controller after the http request. It also has an option to invoke the FullScreenMapActivity using the FloatingActionButton to list all the venues markers on map
+*FullScreenMapsActivity* : It uses the SupportMapFragment to invoke the Google Map related APIs
+*PlaceDetailsActivity* : It uses a collapsing toolbar layout, and contains the further details of a selected venue. It also hosts a static map view of the venue.
+
+
+# Additional Libraries used
+The App makes use of the Picasso library to fetch the images from the icon url.
+
+# Enhancements Required
+1. The App can be modified to support ViewModels
+2. Currently the (optional requirement)logic to add and retrieve the favorite places is not completed and can be added.
+3. Instead of using Picasso library, we can create a DownloadImageAsyncTask to handle the image fetch.
+
